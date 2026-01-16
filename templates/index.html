@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Course System</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/script.js" defer></script>
+</head>
+<body>
+
+<h1>Online Course System</h1>
+
+<div class="card">
+  <h2>Add User</h2>
+  <input id="name" placeholder="Name">
+  <input id="email" placeholder="Email">
+  <select id="role">
+    <option>Student</option>
+    <option>Teacher</option>
+  </select>
+  <button onclick="addUser()">Add User</button>
+
+  <h3>Users</h3>
+  <table id="usersTable"></table>
+</div>
+
+<div class="card">
+  <h2>Create Course</h2>
+  <input id="courseTitle" placeholder="Course Title">
+  <select id="teacherSelect"></select>
+  <button onclick="createCourse()">Create Course</button>
+
+  <h3>Courses</h3>
+  <table id="coursesTable"></table>
+</div>
+
+<div class="card">
+  <h2>Enroll Student</h2>
+  <select id="studentSelect"></select>
+  <select id="courseSelect"></select>
+  <button onclick="enrollStudent()">Enroll</button>
+
+  <h3>Enrollments</h3>
+  <table id="enrollmentsTable"></table>
+</div>
+
+</body>
+</html>
